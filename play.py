@@ -6,6 +6,7 @@ import numpy as np
 import torch
 from torch import nn
 import os
+from sklearn.model_selection import train_test_split
 
 from ale_env import ALEModern, ALEClassic
 
@@ -98,8 +99,9 @@ def main(opt):
 
     save_path = opt.save_path
     os.makedirs(save_path)
+    files = []
     # configure policy
-    policy = partial(_epsilon_greedy, model=model, eps=0.001)
+    policy = partial(_epsilon_greedy, model=model, eps=0.000)
     
     frames = opt.frames
     cur_frame = 0
@@ -125,10 +127,22 @@ def main(opt):
             'rewards': torch.IntTensor(rewards),
             'actions': torch.CharTensor(actions)
         }, f'{save_path}/episode{episode}.pt')
-        # torch.save(f'{save_path}/states{episode}.npy', torch.stack(states).to(torch.float32))
-        # torch.save(f'{save_path}/rewards{episode}.npy', torch.stack(reward).to(torch.int32))
-        # torch.save(f'{save_path}/actions{episode}.npy', torch.stack(action).to(torch.int8))
+
+        files.append(f'episode{episode}.pt')
+
         episode += 1
+
+    train_files, test_files = train_test_split(files, test_size=0.2)
+
+    os.makedirs(f'{save_path}/train')
+    os.makedirs(f'{save_path}/tests')
+
+    for file in  train_files:
+        os.rename(f'{save_path}/{file}', f'{save_path}/train/{file}')
+    
+    for file in  test_files:
+        os.rename(f'{save_path}/{file}', f'{save_path}/train/{file}')
+
         
         
 
