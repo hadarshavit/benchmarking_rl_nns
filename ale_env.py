@@ -120,7 +120,7 @@ class ALEModern:
         state = cv2.resize(
             self.ale.getScreenGrayscale(), (84, 84), interpolation=cv2.INTER_AREA,
         )
-        return torch.tensor(state, dtype=torch.uint8, device=self.device), torch.tensor(self.ale.getScreenGrayscale(), dtype=torch.uint8)
+        return torch.tensor(state, dtype=torch.uint8, device=self.device), torch.tensor(self.ale.getScreenRGB(), dtype=torch.uint8)
 
     def _reset_buffer(self):
         for _ in range(self.window):
