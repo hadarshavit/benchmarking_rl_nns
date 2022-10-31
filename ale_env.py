@@ -149,7 +149,7 @@ class ALEModern:
         """
         # repeat action 4 times, max pool over last 2 frames
         frame_buffer = torch.zeros(2, 84, 84, device=self.device, dtype=torch.uint8)
-        orig_frame_buffer = torch.zeros(2, 210, 160, dtype=torch.uint8)
+        orig_frame_buffer = torch.zeros(2, 210, 160, 3, dtype=torch.uint8)
         reward, done = 0, False
         for t in range(4):
             reward += self.ale.act(self.actions.get(action))
