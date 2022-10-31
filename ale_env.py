@@ -120,7 +120,7 @@ class ALEModern:
         state = cv2.resize(
             self.ale.getScreenGrayscale(), (84, 84), interpolation=cv2.INTER_AREA,
         )
-        return torch.tensor(state, dtype=torch.uint8, device=self.device)
+        return torch.tensor(state, dtype=torch.uint8, device=self.device), torch.tensor(self.ale.getScreenGrayscale(), dtype=torch.uint8)
 
     def _reset_buffer(self):
         for _ in range(self.window):
@@ -135,9 +135,9 @@ class ALEModern:
         self.ale.reset_game()
 
         # process and return "initial" state
-        observation = self._get_state()
+        observation, orig_obs = self._get_state()
         self.state_buffer.append(observation)
-        return torch.stack(list(self.state_buffer), 0).unsqueeze(0).byte()
+        return torch.stack(list(self.state_buffer), 0).unsqueeze(0).byte(), orig_obs
 
     def step(self, action):
         """ Advance the environment given the agent's action.
@@ -149,17 +149,20 @@ class ALEModern:
         """
         # repeat action 4 times, max pool over last 2 frames
         frame_buffer = torch.zeros(2, 84, 84, device=self.device, dtype=torch.uint8)
+        orig_frame_buffer = torch.zeros(2, 210, 160, dtype=torch.uint8)
         reward, done = 0, False
         for t in range(4):
             reward += self.ale.act(self.actions.get(action))
             if t == 2:
-                frame_buffer[0] = self._get_state()
+                frame_buffer[0], orig_frame_buffer[0] = self._get_state()
             elif t == 3:
-                frame_buffer[1] = self._get_state()
+                frame_buffer[1], orig_frame_buffer[1] = self._get_state()
             done = self.ale.game_over()
             if done:
                 break
         observation = frame_buffer.max(0)[0]
+        orig_obs = orig_frame_buffer.max(0)[0]
+        
         self.state_buffer.append(observation)
 
         # clip the reward
@@ -170,7 +173,7 @@ class ALEModern:
 
         # return state, reward, done
         state = torch.stack(list(self.state_buffer), 0).unsqueeze(0).byte()
-        return state, clipped_reward, done, {"true_reward": reward}
+        return state, clipped_reward, done, {"true_reward": reward}, orig_obs
 
     def close(self):
         pass

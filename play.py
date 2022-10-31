@@ -107,18 +107,19 @@ def main(opt):
     episode = 0
     while cur_frame < frames:
         print(f'Frame: {cur_frame}, out of {frames}, {cur_frame / frames}, Episode {episode}', flush=True)
-        obs, done = env.reset(), False
-        states, actions, rewards = [obs], [], []
+        obs, orig_obs = env.reset()
+        done = False
+        states, actions, rewards = [orig_obs], [], []
         while not done:
             action, _ = policy(obs)
-            obs, reward, done, _ = env.step(action)
+            obs, reward, done, _, orig_obs = env.step(action)
             actions.append(action)
             rewards.append(reward)
-            states.append(obs)
+            states.append(orig_obs)
         cur_frame += len(actions)
         states = states[:-1]
 
-        # print(len(states), type(states[0]), type(states), states.shape)
+        print(torch.stack(states).to(torch.int8).shape)
         torch.save({
             'states': torch.stack(states).to(torch.int8),
             'rewards': torch.IntTensor(rewards),

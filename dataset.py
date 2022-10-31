@@ -4,11 +4,14 @@ from tqdm import tqdm
 import os
 
 class PolicyDataset(Dataset):
-    def __init__(self, root_dir) -> None:
+    def __init__(self, root_dir, frame_stack=4, resolution=84) -> None:
         super().__init__()
         self.root_dir = root_dir
         self.num_states = 0
         self.data = []
+        
+        self.frame_stack = frame_stack
+        self.resolution = resolution
 
         for file in tqdm(os.listdir(self.root_dir)):
             full_path = os.path.join(self.root_dir, file)

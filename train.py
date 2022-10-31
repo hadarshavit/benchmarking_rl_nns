@@ -2,6 +2,7 @@ import argparse
 from functools import partial
 from dataset import PolicyDataset
 import timm
+import wandb
 from timm.utils import NativeScaler
 import torch
 from torch.utils.data import DataLoader
@@ -18,11 +19,12 @@ def parse_args():
 def main():
     args = parse_args()
     device = torch.device('cuda:0')
+    wandb.init(project='benchmark', config=args)
     amp_autocast = partial(torch.autocast, device_type=device.type, dtype=torch.float16)
 
     dataset = PolicyDataset(args.dataset_path)
 
-    model = torch.nn.Embedding() # TODO
+    model = torch.nn.Embedding() # TODO set to a real model (nature, IMAPLA CNN)
 
     criterion = torch.nn.SmoothL1Loss()
     mae = torch.nn.L1Loss()
@@ -44,7 +46,11 @@ def main():
             optimizer.zero_grad()
             scaler(loss, optimizer)
 
+            wandb.log({'loss': loss, 'mae': mae[epoch]})
+
     torch.save(maes, 'maes.pt')
+    
+    print('AUC:', torch.trapezoid(maes))
 
 
 if __name__ == '__main__':
