@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # parser.add_argument("game", type=str, help="game name")
     parser.add_argument("path", type=str, help="path to the model")
     parser.add_argument(
-        "-f", "--frames", default=1_000_000, type=int, help="number of episodes"
+        "-f", "--frames", default=1_000_000, type=int, help="number of frames"
     )
     parser.add_argument(
         "-v",
