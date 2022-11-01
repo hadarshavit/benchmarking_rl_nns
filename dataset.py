@@ -25,12 +25,15 @@ class PolicyDataset(Dataset):
 
             for i in range(len(actions) - 1, -1, -1):
                 gt = rewards[i] + 0.99 * gt
-
                 self.data.append((states[i], gt))
 
     def __len__(self):
         return len(self.data)
 
-    def __getitem__(self, i):  # TODO: frame stacking, resize
-        return self.data[i]
+    def __getitem__(self, i):  # TODO: resize
+        frames = [d[0] for d in self.data[i-self.frame_stack+1:i+1]]
+        if len(frames) == 0 or self.frame_stack > len(self.data):
+            print("ERROR when stacking frames.")  # Idk how to make proper logs
+        return frames, self.data[i][1]
+
 
