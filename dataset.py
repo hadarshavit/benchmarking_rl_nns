@@ -1,5 +1,6 @@
 from torch.utils.data import Dataset
 import torch
+from torchvision.transforms import Resize
 from tqdm import tqdm
 import os
 
@@ -12,6 +13,8 @@ class PolicyDataset(Dataset):
         
         self.frame_stack = frame_stack
         self.resolution = resolution
+        
+        self.resize = Resize(self.resolution)
 
         for file in tqdm(os.listdir(self.root_dir)):
             full_path = os.path.join(self.root_dir, file)
@@ -31,7 +34,7 @@ class PolicyDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, i):  # TODO: resize
-        frames = [d[0] for d in self.data[i-self.frame_stack+1:i+1]] # TODO check order (compare with the atari_env.py's order)
+        frames = [self.resize(d[0]) for d in self.data[i-self.frame_stack+1:i+1]] # TODO check order (compare with the atari_env.py's order)
         if len(frames) == 0 or self.frame_stack > len(self.data):
             logging.error("ERROR when stacking frames.") 
         return frames, self.data[i][1]
