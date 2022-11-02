@@ -1,11 +1,13 @@
 from torch.utils.data import Dataset
 import torch
-from torchvision.transforms import Resize
+from torchvision.transforms import Resize, Grayscale
 from tqdm import tqdm
 import os
+from collections import deque
+import logging
 
 class PolicyDataset(Dataset):
-    def __init__(self, root_dir, frame_stack=4, resolution=84) -> None:
+    def __init__(self, root_dir, frame_stack=4, resolution=84, grayscale=True) -> None:
         super().__init__()
         self.root_dir = root_dir
         self.num_states = 0
@@ -15,12 +17,14 @@ class PolicyDataset(Dataset):
         self.resolution = resolution
         
         self.resize = Resize(self.resolution)
+        self.grayscale = Grayscale()
 
         for file in tqdm(os.listdir(self.root_dir)):
             full_path = os.path.join(self.root_dir, file)
 
             episode = torch.load(full_path)
             states = episode['states']
+            states = [self.grayscale(self.resize(state)) for state in states]
             rewards = episode['rewards']
             actions = episode['actions']
 
@@ -28,15 +32,24 @@ class PolicyDataset(Dataset):
 
             for i in range(len(actions) - 1, -1, -1):
                 gt = rewards[i] + 0.99 * gt
-                self.data.append((states[i], gt))
+
+                state_buffer = deque([], maxlen=self.frame_stack)
+                n_frames = max(i + 1, self.frame_stack)
+                frames = states[i - n_frames + 1: i + 1]
+                for _ in range(n_frames - self.frame_stack):
+                    state_buffer.append(torch.zeros(84, 84, 1 if grayscale else 3, dtype=torch.uint8))
+
+                for frame in frames:
+                    state_buffer.append(frame)
+                
+                state_buffer = torch.stack(list(state_buffer), 0).unsqueeze(0).byte()
+
+                self.data.append((state_buffer, gt))
 
     def __len__(self):
         return len(self.data)
 
-    def __getitem__(self, i):  # TODO: resize
-        frames = [self.resize(d[0]) for d in self.data[i-self.frame_stack+1:i+1]] # TODO check order (compare with the atari_env.py's order)
-        if len(frames) == 0 or self.frame_stack > len(self.data):
-            logging.error("ERROR when stacking frames.") 
-        return frames, self.data[i][1]
+    def __getitem__(self, i):
+        return self.data[i][0], self.data[i][1]
 
 
