@@ -34,7 +34,7 @@ def main():
     maes = torch.zeros(100)
     optimizer = torch.optim.Adam(model.parameters())
     train_loader = DataLoader(train_dataset, batch_size=256, num_workers=4)
-    test_loader = DataLoader(train_dataset, batch_size=256, num_workers=4)
+    test_loader = DataLoader(test_loader, batch_size=256, num_workers=4)
     scaler = NativeScaler()
 
     for epoch in range(100):

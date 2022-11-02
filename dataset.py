@@ -24,7 +24,8 @@ class PolicyDataset(Dataset):
 
             episode = torch.load(full_path)
             states = episode['states']
-            states = [self.grayscale(self.resize(state)) for state in states]
+            print(states[0].shape)
+            states = [self.grayscale(self.resize(state.permute(2, 0, 1))) for state in states]
             rewards = episode['rewards']
             actions = episode['actions']
 
@@ -34,7 +35,7 @@ class PolicyDataset(Dataset):
                 gt = rewards[i] + 0.99 * gt
 
                 state_buffer = deque([], maxlen=self.frame_stack)
-                n_frames = max(i + 1, self.frame_stack)
+                n_frames = min(i + 1, self.frame_stack)
                 frames = states[i - n_frames + 1: i + 1]
                 for _ in range(n_frames - self.frame_stack):
                     state_buffer.append(torch.zeros(84, 84, 1 if grayscale else 3, dtype=torch.uint8))
