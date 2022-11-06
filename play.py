@@ -135,13 +135,13 @@ def main(opt):
     train_files, test_files = train_test_split(files, test_size=0.2)
 
     os.makedirs(f'{save_path}/train')
-    os.makedirs(f'{save_path}/tests')
+    os.makedirs(f'{save_path}/test')
 
     for file in  train_files:
         os.rename(f'{save_path}/{file}', f'{save_path}/train/{file}')
     
     for file in  test_files:
-        os.rename(f'{save_path}/{file}', f'{save_path}/train/{file}')
+        os.rename(f'{save_path}/{file}', f'{save_path}/test/{file}')
 
         
         
