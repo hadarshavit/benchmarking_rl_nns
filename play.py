@@ -6,6 +6,8 @@ import numpy as np
 import torch
 from torch import nn
 import os
+from concurrent.futures import ProcessPoolExecutor
+from PIL import Image
 from sklearn.model_selection import train_test_split
 
 from ale_env import ALEModern, ALEClassic
@@ -68,8 +70,14 @@ def _epsilon_greedy(obs, model, eps=0.001):
     return argmax_a.item(), q_val
 
 
+def save_img(img, save_path):
+    im = Image.fromarray(img.numpy())
+    im.save(save_path)
+
 def main(opt):
-    # game/seed/model
+    executor =  ProcessPoolExecutor(2)
+    
+
     ckpt_path = Path(opt.path)
     game = ckpt_path.parts[-3]
     
@@ -88,7 +96,7 @@ def main(opt):
         env.set_mode_interactive()
 
     # init model
-    model = AtariNet(env.action_space.n, distributional="C51_" in opt.path)
+    model = AtariNet(env.action_space.n, distributional="C51_" in opt.path).cuda()
 
     # sanity check
     print(env)
@@ -102,6 +110,8 @@ def main(opt):
     files = []
     # configure policy
     policy = partial(_epsilon_greedy, model=model, eps=0.000)
+
+    episodes_data = []
     
     frames = opt.frames
     cur_frame = 0
@@ -112,36 +122,47 @@ def main(opt):
         obs, orig_obs = env.reset()
         done = False
         states, actions, rewards = [orig_obs], [], []
+        executor.submit(save_img, orig_obs, f'{save_path}/e{episode}_f0.png')
+        frame_in_ep = 1
         while not done:
-            action, _ = policy(obs)
+            action, _ = policy(obs.cuda())
             obs, reward, done, _, orig_obs = env.step(action)
             actions.append(action)
             rewards.append(reward)
-            states.append(orig_obs)
+            if not done:
+                executor.submit(save_img, orig_obs, f'{save_path}/e{episode}_f{frame_in_ep}.png')
+                # executor.submit(save_image, orig_obs, )
+
+            frame_in_ep += 1
         cur_frame += len(actions)
         states = states[:-1]
 
-        print(torch.stack(states).to(torch.int8).shape)
-        torch.save({
-            'states': torch.stack(states).to(torch.int8),
-            'rewards': torch.IntTensor(rewards),
-            'actions': torch.CharTensor(actions)
-        }, f'{save_path}/episode{episode}.pt')
-
-        files.append(f'episode{episode}.pt')
-
+        print(episode, frame_in_ep, len(rewards), len(actions))
+        # print(torch.stack(states).to(torch.int8).shape)
+        episodes_data.append((episode, rewards, actions))
+        # torch.save({
+        #     'states': torch.stack(states).to(torch.int8),
+        #     'rewards': torch.IntTensor(rewards),
+        #     'actions': torch.CharTensor(actions)
+        # }, f'{save_path}/episode{episode}.pt')
         episode += 1
 
-    train_files, test_files = train_test_split(files, test_size=0.2)
+    executor.shutdown(wait=True)
+    train_episodes, test_episodes = train_test_split(episodes_data, test_size=0.2)
 
     os.makedirs(f'{save_path}/train')
     os.makedirs(f'{save_path}/test')
 
-    for file in  train_files:
-        os.rename(f'{save_path}/{file}', f'{save_path}/train/{file}')
+    torch.save(train_episodes, f'{save_path}/train/data.pt')
+    torch.save(test_episodes, f'{save_path}/test/data.pt')
+
+    for e_id, rewards, _ in train_episodes:
+        for f_id in range(len(rewards)):
+            os.rename(f'{save_path}/e{e_id}_f{f_id}.png', f'{save_path}/train/e{e_id}_f{f_id}.png')
     
-    for file in  test_files:
-        os.rename(f'{save_path}/{file}', f'{save_path}/test/{file}')
+    for e_id, rewards, _ in test_episodes:
+        for f_id in range(len(rewards)):
+            os.rename(f'{save_path}/e{e_id}_f{f_id}.png', f'{save_path}/test/e{e_id}_f{f_id}.png')
 
         
         

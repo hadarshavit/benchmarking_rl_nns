@@ -42,13 +42,14 @@ def main():
     mae = torch.nn.L1Loss(reduction='sum')
     maes = torch.zeros(100, device='cuda:0')
     optimizer = torch.optim.Adam(model.parameters())
-    train_loader = DataLoader(train_dataset, batch_size=1024, num_workers=2, persistent_workers=True)
-    test_loader = DataLoader(test_dataset, batch_size=1024, num_workers=2, persistent_workers=True)
+    train_loader = DataLoader(train_dataset, batch_size=256, num_workers=12, persistent_workers=True)
+    test_loader = DataLoader(test_dataset, batch_size=256, num_workers=12, persistent_workers=True)
     scaler = NativeScaler()
 
     print('Training Starts!')
     for epoch in range(100):
         for data, target in train_loader:
+            # print(torch.min(data), torch.max(data), flush=True)
             data = data.cuda()
             target = target.cuda()
 
