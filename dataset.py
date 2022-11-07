@@ -1,6 +1,7 @@
 from torch.utils.data import Dataset
 import torch
 from torchvision.transforms import Resize, Grayscale, PILToTensor, Compose, ConvertImageDtype
+from torchvision.transforms.functional import pil_to_tensor
 from tqdm import tqdm
 import os
 from torch import nn
@@ -26,8 +27,8 @@ class PolicyDataset(Dataset):
                 Resize((self.resolution, self.resolution)),
                 Grayscale(),
                 PILToTensor(),
-                ConvertImageDtype(torch.float16)]
-            )
+                ConvertImageDtype(torch.float16)
+            ])
         else:
             self.transforms = transforms
         
@@ -40,7 +41,7 @@ class PolicyDataset(Dataset):
     def prepare(self):
         data = torch.load(f'{self.root_dir}/data.pt')
         processed_data = []
-        for e_id, rewards, _ in data:
+        for e_id, rewards, _ in tqdm(data):
             gt = 0
 
             for i in range(len(rewards) - 1, -1, -1):
@@ -54,6 +55,13 @@ class PolicyDataset(Dataset):
 
         torch.save(processed_data, os.path.join(self.root_dir, 'processed.pt'))
 
+    def preprocess(self):
+        for i in tqdm(range(len(self.data))):
+            eid, fid, gt = self.data[i]
+            img = Image.open(f'{self.root_dir}/e{eid}_f{fid}.png')
+            img = self.transforms(img)
+            torch.save(img, f'{self.root_dir}/e{eid}_f{fid}.pt')
+
     def load(self):
         self.data = torch.load(os.path.join(self.root_dir, 'processed.pt'))
 
@@ -62,10 +70,10 @@ class PolicyDataset(Dataset):
 
     def get_image(self, i):
         eid, fid, gt = self.data[i]
-        img = Image.open(f'{self.root_dir}/e{eid}_f{fid}.png')
-        img = self.transforms(img)
-
-        return img
+        # img = Image.open(f'{self.root_dir}/e{eid}_f{fid}.png')
+        # img = self.transforms(img)
+        return torch.load(f'{self.root_dir}/e{eid}_f{fid}.pt')
+        # return pil_to_tensor(img)
 
     def __getitem__(self, i):
         eid, fid, gt = self.data[i]
@@ -75,7 +83,7 @@ class PolicyDataset(Dataset):
             state_buffer[c] = self.get_image(i - fid + j)
             c -= 1
         
-        return state_buffer.reshape((self.n_channels * self.frame_stack, 84, 84)), gt
+        return state_buffer.reshape((self.n_channels * self.frame_stack, 84, 84)), torch.FloatTensor([gt])
 
 
 if __name__ == '__main__':

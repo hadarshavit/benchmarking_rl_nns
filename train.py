@@ -27,7 +27,9 @@ def main():
 
     print('Creating Datasets')
     train_dataset = PolicyDataset(os.path.join(args.dataset_path, 'train'))
+    train_dataset.preprocess()
     test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'test'))
+    test_dataset.preprocess()
 
     if args.model == 'nature':
         model = NatureCNN(4, 1, torch.nn.Linear).cuda()
@@ -42,8 +44,8 @@ def main():
     mae = torch.nn.L1Loss(reduction='sum')
     maes = torch.zeros(100, device='cuda:0')
     optimizer = torch.optim.Adam(model.parameters())
-    train_loader = DataLoader(train_dataset, batch_size=256, num_workers=12, persistent_workers=True)
-    test_loader = DataLoader(test_dataset, batch_size=256, num_workers=12, persistent_workers=True)
+    train_loader = DataLoader(train_dataset, batch_size=1024, num_workers=5, persistent_workers=True)
+    test_loader = DataLoader(test_dataset, batch_size=1024, num_workers=5, persistent_workers=True)
     scaler = NativeScaler()
 
     print('Training Starts!')
@@ -52,6 +54,7 @@ def main():
             # print(torch.min(data), torch.max(data), flush=True)
             data = data.cuda()
             target = target.cuda()
+            # print(torch.min(target), torch.max(target), torch.mean(target))
 
             with amp_autocast():
                 y = model(data)
@@ -67,6 +70,8 @@ def main():
                 with amp_autocast():
                     y = model(data)
                     # print(y, target)
+                    # print(torch.min(target), torch.max(target), torch.mean(target))
+                    # print(torch.min(y), torch.max(y), torch.mean(y))
                     maes[epoch] += mae(y, target)
 
         maes[epoch] /= len(test_dataset)
