@@ -41,23 +41,24 @@ class PolicyDataset(Dataset):
     def prepare(self):
         data = torch.load(f'{self.root_dir}/data.pt')
         processed_data = []
-        for e_id, rewards, _ in tqdm(data):
+        for e_id, rewards, actions in tqdm(data):
             gt = 0
 
             for i in range(len(rewards) - 1, -1, -1):
                 # import pdb; pdb.set_trace()
                 reward = rewards[i]
+                action = actions[i]
                 clipped = max(min(reward, self.clip_rewards), -self.clip_rewards)
                 gt = clipped + 0.99 * gt
 
             
-                processed_data.append((e_id, i, gt))
+                processed_data.append((e_id, i, gt, action))
 
         torch.save(processed_data, os.path.join(self.root_dir, 'processed.pt'))
 
     def preprocess(self):
         for i in tqdm(range(len(self.data))):
-            eid, fid, gt = self.data[i]
+            eid, fid, gt, action = self.data[i]
             img = Image.open(f'{self.root_dir}/e{eid}_f{fid}.png')
             img = self.transforms(img)
             torch.save(img, f'{self.root_dir}/e{eid}_f{fid}.pt')
@@ -69,21 +70,21 @@ class PolicyDataset(Dataset):
         return len(self.data)
 
     def get_image(self, i):
-        eid, fid, gt = self.data[i]
+        eid, fid, gt, action = self.data[i]
         # img = Image.open(f'{self.root_dir}/e{eid}_f{fid}.png')
         # img = self.transforms(img)
         return torch.load(f'{self.root_dir}/e{eid}_f{fid}.pt')
         # return pil_to_tensor(img)
 
     def __getitem__(self, i):
-        eid, fid, gt = self.data[i]
+        eid, fid, gt, action = self.data[i]
         state_buffer = torch.zeros(self.frame_stack, self.n_channels, 84, 84, dtype=torch.half)
         c = 3
         for j in range(fid, max(-1, fid - self.frame_stack), -1):
             state_buffer[c] = self.get_image(i - fid + j)
             c -= 1
         
-        return state_buffer.reshape((self.n_channels * self.frame_stack, 84, 84)), torch.FloatTensor([gt])
+        return state_buffer.reshape((self.n_channels * self.frame_stack, 84, 84)), torch.FloatTensor([gt]), torch.LongTensor([action])
 
 
 if __name__ == '__main__':

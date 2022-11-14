@@ -70,7 +70,7 @@ def _epsilon_greedy(obs, model, eps=0.001):
     return argmax_a.item(), q_val
 
 
-def _softmax(obs, model, tau):
+def _softmax(obs, model, tau=0.1):
     qs = model(obs)
     qs /= tau
     qs = torch.softmax(qs)

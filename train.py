@@ -8,7 +8,7 @@ from timm.utils import NativeScaler
 import torch
 import os
 from torch.utils.data import DataLoader
-from architectures import NatureCNN, ImpalaCNNSmall, ImpalaCNNLarge
+from architectures import get_model
 
 
 def parse_args():
@@ -35,7 +35,7 @@ def main(args, train_dataset, test_dataset):
     amp_autocast = partial(torch.autocast, device_type=device.type, dtype=torch.float16)
 
     print('Creating Datasets')
-
+    model = get_model(args.model, spectral_norm=False, resolution=(84, 84))
     if args.model == 'nature':
         model = NatureCNN(4, 1, torch.nn.Linear).cuda()
     elif args.model == 'imapala_small':
