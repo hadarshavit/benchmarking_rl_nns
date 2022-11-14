@@ -87,5 +87,6 @@ class PolicyDataset(Dataset):
 
 
 if __name__ == '__main__':
-    PolicyDataset('/data1/s3092593/qbert_replays/DQN_modern/Qbert/0/model_50000000_new/train', prepare=True)
+    
+    # PolicyDataset('/data1/s3092593/qbert_replays/DQN_modern/Qbert/0/model_50000000_new/train', prepare=True)
     PolicyDataset('/data1/s3092593/qbert_replays/DQN_modern/Qbert/0/model_50000000_new/test', prepare=True)

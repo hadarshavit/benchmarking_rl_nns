@@ -2,6 +2,7 @@ import argparse
 from functools import partial
 from dataset import PolicyDataset
 import timm
+from loader import PrefetchLoader, MultiEpochsDataLoader
 import wandb
 from timm.utils import NativeScaler
 import torch
@@ -15,21 +16,25 @@ def parse_args():
 
     parser.add_argument('--dataset-path', type=str)
     parser.add_argument('--model', type=str)
+    parser.add_argument('--lr', type=float)
+    parser.add_argument('--beta1', type=float)
+    parser.add_argument('--beta2', type=float)
+    parser.add_argument('--weight_decay', type=float)
+
+    parser.add_argument('--reps', type=int)
+    parser.add_argument('--prepare', type=bool, default=True)
 
     return parser.parse_args()
 
 
-def main():
-    args = parse_args()
+def main(args, train_dataset, test_dataset):
+    n_epochs = 300
     device = torch.device('cuda:0')
-    wandb.init(project='benchmark', config=args)
+    mname = args.model.replace(':', '_')
+    wandb.init(project=f'benchmark_qbert2_{mname}', config=args)
     amp_autocast = partial(torch.autocast, device_type=device.type, dtype=torch.float16)
 
     print('Creating Datasets')
-    train_dataset = PolicyDataset(os.path.join(args.dataset_path, 'train'))
-    train_dataset.preprocess()
-    test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'test'))
-    test_dataset.preprocess()
 
     if args.model == 'nature':
         model = NatureCNN(4, 1, torch.nn.Linear).cuda()
@@ -42,14 +47,15 @@ def main():
 
     criterion = torch.nn.SmoothL1Loss()
     mae = torch.nn.L1Loss(reduction='sum')
-    maes = torch.zeros(100, device='cuda:0')
-    optimizer = torch.optim.Adam(model.parameters())
-    train_loader = DataLoader(train_dataset, batch_size=1024, num_workers=5, persistent_workers=True)
-    test_loader = DataLoader(test_dataset, batch_size=1024, num_workers=5, persistent_workers=True)
+    maes = torch.zeros(n_epochs, device='cuda:0')
+    optimizer = torch.optim.RAdam(model.parameters(), lr=args.lr, betas=(args.beta1, args.beta2), weight_decay=args.weight_decay)
+    
+    train_loader = PrefetchLoader(MultiEpochsDataLoader(train_dataset, batch_size=1024, num_workers=5, persistent_workers=True))
+    test_loader = PrefetchLoader(MultiEpochsDataLoader(test_dataset, batch_size=1024, num_workers=5, persistent_workers=True))
     scaler = NativeScaler()
 
     print('Training Starts!')
-    for epoch in range(100):
+    for epoch in range(n_epochs):
         for data, target in train_loader:
             # print(torch.min(data), torch.max(data), flush=True)
             data = data.cuda()
@@ -74,6 +80,9 @@ def main():
                     # print(torch.min(y), torch.max(y), torch.mean(y))
                     maes[epoch] += mae(y, target)
 
+                    if torch.isnan(maes[epoch]) or torch.isinf(maes[epoch]):
+                        return 100
+
         maes[epoch] /= len(test_dataset)
         wandb.log({'loss': loss, 'mae': maes[epoch]})
         print(f'Epoch {epoch}, mae {maes[epoch]}')
@@ -81,7 +90,20 @@ def main():
     torch.save(maes, 'maes.pt')
     
     print('AUC:', torch.trapezoid(maes))
+    wandb.finish()
+
+    return maes[-1].item()
 
 
 if __name__ == '__main__':
-    main()
+    args = parse_args()
+
+    train_dataset = PolicyDataset(os.path.join(args.dataset_path, 'train'))
+    if args.prepare:
+        train_dataset.preprocess()
+    test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'test'))
+    if args.prepare:
+        test_dataset.preprocess()
+
+    for rep in range(args.reps):
+        main(args, train_dataset, test_dataset)

@@ -70,6 +70,13 @@ def _epsilon_greedy(obs, model, eps=0.001):
     return argmax_a.item(), q_val
 
 
+def _softmax(obs, model, tau):
+    qs = model(obs)
+    qs /= tau
+    qs = torch.softmax(qs)
+
+    return torch.distributions.Categorical(probs=qs).sample()
+
 def save_img(img, save_path):
     im = Image.fromarray(img.numpy())
     im.save(save_path)
