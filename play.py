@@ -116,7 +116,7 @@ def main(opt):
     os.makedirs(save_path)
     files = []
     # configure policy
-    policy = partial(_epsilon_greedy, model=model, eps=0.000)
+    policy = partial(_softmax, model=model, tau=opt.tau)
 
     episodes_data = []
     
@@ -197,4 +197,5 @@ if __name__ == "__main__":
     parser.add_argument(
         "-d", "--save-path", default='/data1/s3092593/qbert_replays', type=str, help="record png screens and sound",
     )
+    parser.add_argument('--tau', default=0.1, type=float)
     main(parser.parse_args())

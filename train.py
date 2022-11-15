@@ -57,10 +57,8 @@ def main(args, train_dataset, test_dataset):
     print('Training Starts!')
     for epoch in range(n_epochs):
         for data, target in train_loader:
-            # print(torch.min(data), torch.max(data), flush=True)
             data = data.cuda()
             target = target.cuda()
-            # print(torch.min(target), torch.max(target), torch.mean(target))
 
             with amp_autocast():
                 y = model(data)
@@ -75,9 +73,6 @@ def main(args, train_dataset, test_dataset):
                 target = target.cuda()
                 with amp_autocast():
                     y = model(data)
-                    # print(y, target)
-                    # print(torch.min(target), torch.max(target), torch.mean(target))
-                    # print(torch.min(y), torch.max(y), torch.mean(y))
                     maes[epoch] += mae(y, target)
 
                     if torch.isnan(maes[epoch]) or torch.isinf(maes[epoch]):
