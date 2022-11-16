@@ -116,7 +116,7 @@ def main(opt):
     os.makedirs(save_path)
     files = []
     # configure policy
-    policy = partial(_epsilon_greedy, model=model, eps=0.000)
+    policy = partial(_epsilon_greedy, model=model, eps=opt.eps)
 
     episodes_data = []
     
@@ -138,42 +138,15 @@ def main(opt):
             rewards.append(reward)
             if not done:
                 executor.submit(save_img, orig_obs, f'{save_path}/e{episode}_f{frame_in_ep}.png')
-                # executor.submit(save_image, orig_obs, )
 
             frame_in_ep += 1
         cur_frame += len(actions)
         states = states[:-1]
 
         print(episode, frame_in_ep, len(rewards), len(actions))
-        # print(torch.stack(states).to(torch.int8).shape)
         episodes_data.append((episode, rewards, actions))
-        # torch.save({
-        #     'states': torch.stack(states).to(torch.int8),
-        #     'rewards': torch.IntTensor(rewards),
-        #     'actions': torch.CharTensor(actions)
-        # }, f'{save_path}/episode{episode}.pt')
         episode += 1
-
-    executor.shutdown(wait=True)
-    train_episodes, test_episodes = train_test_split(episodes_data, test_size=0.2)
-
-    os.makedirs(f'{save_path}/train')
-    os.makedirs(f'{save_path}/test')
-
-    torch.save(train_episodes, f'{save_path}/train/data.pt')
-    torch.save(test_episodes, f'{save_path}/test/data.pt')
-
-    for e_id, rewards, _ in train_episodes:
-        for f_id in range(len(rewards)):
-            os.rename(f'{save_path}/e{e_id}_f{f_id}.png', f'{save_path}/train/e{e_id}_f{f_id}.png')
-    
-    for e_id, rewards, _ in test_episodes:
-        for f_id in range(len(rewards)):
-            os.rename(f'{save_path}/e{e_id}_f{f_id}.png', f'{save_path}/test/e{e_id}_f{f_id}.png')
-
-        
-        
-
+    torch.save(episodes_data, f'{save_path}/data.pt')
 
 if __name__ == "__main__":
     parser = ArgumentParser()
@@ -197,4 +170,5 @@ if __name__ == "__main__":
     parser.add_argument(
         "-d", "--save-path", default='/data1/s3092593/qbert_replays', type=str, help="record png screens and sound",
     )
+    parser.add_argument('--eps', type=float, default=0.2)
     main(parser.parse_args())

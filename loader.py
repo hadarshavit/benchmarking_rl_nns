@@ -71,21 +71,23 @@ class PrefetchLoader:
         stream = torch.cuda.Stream()
         first = True
 
-        for next_input, next_target in self.loader:
+        for next_input, next_target, next_actions in self.loader:
             with torch.cuda.stream(stream):
                 next_input = next_input.cuda(non_blocking=True)
                 next_target = next_target.cuda(non_blocking=True)
+                next_actions = next_actions.cuda(non_blocking=True)
 
             if not first:
-                yield input, target
+                yield input, target, actions
             else:
                 first = False
 
             torch.cuda.current_stream().wait_stream(stream)
             input = next_input
             target = next_target
+            actions = next_actions
 
-        yield input, target
+        yield input, target, actions
 
     def __len__(self):
         return len(self.loader)

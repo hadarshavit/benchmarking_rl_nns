@@ -8,7 +8,16 @@ from torch import nn
 from collections import deque
 import logging
 from PIL import Image
+import sys
+from argparse import ArgumentParser
+import time
+from concurrent.futures import ProcessPoolExecutor
 import torch
+
+def preprocess_image(in_path, out_path, transforms):
+    img = Image.open(in_path)
+    img = transforms(img)
+    torch.save(img, out_path)
 
 class PolicyDataset(Dataset):
     def __init__(self, root_dir, frame_stack=4, resolution=84, transforms=None, prepare=False, clip_rewards=1) -> None:
@@ -55,13 +64,16 @@ class PolicyDataset(Dataset):
                 processed_data.append((e_id, i, gt, action))
 
         torch.save(processed_data, os.path.join(self.root_dir, 'processed.pt'))
+        self.data = processed_data
 
-    def preprocess(self):
-        for i in tqdm(range(len(self.data))):
-            eid, fid, gt, action = self.data[i]
-            img = Image.open(f'{self.root_dir}/e{eid}_f{fid}.png')
-            img = self.transforms(img)
-            torch.save(img, f'{self.root_dir}/e{eid}_f{fid}.pt')
+    def preprocess(self, max_workers=12):
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+
+            for i in tqdm(range(len(self.data))):
+                eid, fid, gt, action = self.data[i]
+                executor.submit(preprocess_image, f'{self.root_dir}/e{eid}_f{fid}.png', f'{self.root_dir}/e{eid}_f{fid}.pt', self.transforms)
+                if i % 10000 == 0:
+                    print('sleeping', executor._queue_count, flush=True, file=sys.stderr)
 
     def load(self):
         self.data = torch.load(os.path.join(self.root_dir, 'processed.pt'))
@@ -88,6 +100,9 @@ class PolicyDataset(Dataset):
 
 
 if __name__ == '__main__':
-    
-    # PolicyDataset('/data1/s3092593/qbert_replays/DQN_modern/Qbert/0/model_50000000_new/train', prepare=True)
-    PolicyDataset('/data1/s3092593/qbert_replays/DQN_modern/Qbert/0/model_50000000_new/test', prepare=True)
+    parser = ArgumentParser()
+    parser.add_argument('root_dir')
+
+    args = parser.parse_args()
+
+    PolicyDataset(args.root_dir, prepare=True).preprocess()

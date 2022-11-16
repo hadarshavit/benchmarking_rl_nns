@@ -497,7 +497,7 @@ class ConvNeXtImpala(nn.Module):
         return self.dueling(f, advantages_only=advantages_only)
 
 
-def get_model(model_str, spectral_norm, resolution, global_pool_type):
+def get_model(model_str, spectral_norm, resolution):
     if model_str == 'nature': return NatureCNN
     elif model_str == 'dueling': return DuelingNatureCNN
     elif model_str == 'impala_small': return ImpalaCNNSmall
