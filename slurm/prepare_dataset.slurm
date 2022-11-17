@@ -2,10 +2,10 @@
 #SBATCH --job-name=perp-data
 #SBATCH --output=../out_files/%x_%j.out
 #SBATCH --error=../out_files/%x_%j.err
-#SBATCH --mem=90G
-#SBATCH --time=0-1:00:00
-#SBATCH --partition=testing
-#SBATCH --ntasks=12
+#SBATCH --mem=10G
+#SBATCH --time=0-4:00:00
+#SBATCH --partition=gpu-short
+#SBATCH --ntasks=3
 #SBATCH --gpus=1
 #SBATCH --nodes=1
 
