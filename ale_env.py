@@ -246,17 +246,20 @@ class ALEClassic(ALEModern):
     def step(self, action):
         # Repeat action 4 times, max pool over last 2 frames
         frame_buffer = torch.zeros(2, 84, 84, device=self.device, dtype=torch.uint8)
+        orig_frame_buffer = torch.zeros(2, 210, 160, 3, dtype=torch.uint8)
         reward, done = 0, False
         for t in range(4):
             reward += self.ale.act(self.actions.get(action))
             if t == 2:
-                frame_buffer[0] = self._get_state()
+                frame_buffer[0], orig_frame_buffer[0] = self._get_state()
             elif t == 3:
-                frame_buffer[1] = self._get_state()
+                frame_buffer[1], orig_frame_buffer[1] = self._get_state()
             done = self.ale.game_over()
             if done:
                 break
         observation = frame_buffer.max(0)[0]
+        orig_obs = orig_frame_buffer.max(0)[0]
+
         self.state_buffer.append(observation)
         # Detect loss of life as terminal in training mode
         if self.training:
@@ -271,7 +274,7 @@ class ALEClassic(ALEModern):
             reward = max(min(reward, self.clip_val), -self.clip_val)
         # Return state, reward, done
         state = torch.stack(list(self.state_buffer), 0).unsqueeze(0).byte()
-        return state, reward, done, {}
+        return state, reward, done, {}, orig_obs
 
     def train(self):
         """ Switches the env to training phase
