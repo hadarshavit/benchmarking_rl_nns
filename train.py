@@ -58,7 +58,6 @@ def main(args, train_dataset, test_dataset):
 
             with amp_autocast():
                 y = torch.gather(model(data), dim=1, index=actions)
-                print(y.shape, target.shape, actions.shape, model(data).shape)
                 loss = criterion(y, target)
 
             optimizer.zero_grad()
@@ -68,7 +67,6 @@ def main(args, train_dataset, test_dataset):
             for data, target, actions in test_loader:
                 with amp_autocast():
                     y = torch.gather(model(data), dim=1, index=actions)
-                    print(y.shape, target.shape, actions.shape, model(data).shape)
                     maes[epoch] += mae(y, target)
 
                     if torch.isnan(maes[epoch]) or torch.isinf(maes[epoch]):
