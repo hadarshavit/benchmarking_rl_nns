@@ -84,6 +84,10 @@ def main(args, train_dataset, test_dataset):
     
     print('AUC:', torch.trapezoid(maes))
     if args.wandb:
+        torch.save(model, f'/data1/s3092593/saved_benchmarks/benchmark_{args.wandb_name}_{mname}_{args.seed}.pt')
+        artifact = wandb.Artifact('saved_model', type='model')
+        artifact.add_file(f'/data1/s3092593/saved_benchmarks/benchmark_{args.wandb_name}_{mname}_{args.seed}.pt')
+        wandb.log_artifact(artifact)
         wandb.finish()
 
     return maes[-1].item()
@@ -97,7 +101,7 @@ if __name__ == '__main__':
         test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'test'),  prepare=False)
     else:
         test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'validation'),  prepare=False)
-        
+
     for rep in range(args.reps):
         main(args, train_dataset, test_dataset)
         args.seed += 1
