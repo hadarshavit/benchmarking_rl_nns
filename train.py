@@ -36,7 +36,8 @@ def main(args, train_dataset, test_dataset):
     mname = args.model.replace(':', '_')
 
     if args.wandb:
-        wandb.init(project=f'benchmark_{args.wandb_name}_{mname}', config=args)
+        proj_name = args.wandb_name.replace(':', '_')
+        wandb.init(project=f'benchmark_{proj_name}_{mname}', config=args)
 
     amp_autocast = partial(torch.autocast, device_type=device.type, dtype=torch.float16)
 

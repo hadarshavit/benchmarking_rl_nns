@@ -236,7 +236,7 @@ class ImpalaCNNLarge(nn.Module):
     """
     Implementation of the large variant of the IMPALA CNN introduced in Espeholt et al. (2018).
     """
-    def __init__(self, in_depth, actions, linear_layer, model_size=1, spectral_norm=False):
+    def __init__(self, depth, actions, linear_layer, model_size=1, spectral_norm=False):
         super().__init__()
 
         def identity(p): return p
@@ -245,7 +245,7 @@ class ImpalaCNNLarge(nn.Module):
         norm_func_last = torch.nn.utils.spectral_norm if (spectral_norm == 'last' or spectral_norm == 'all') else identity
 
         self.main = nn.Sequential(
-            ImpalaCNNBlock(in_depth, 16*model_size, norm_func=norm_func),
+            ImpalaCNNBlock(depth, 16*model_size, norm_func=norm_func),
             ImpalaCNNBlock(16*model_size, 32*model_size, norm_func=norm_func),
             ImpalaCNNBlock(32*model_size, 32*model_size, norm_func=norm_func_last),
             nn.ReLU()
@@ -272,10 +272,10 @@ class ConvNeXtAttoModel(nn.Module):
     """
     Implementation of the large variant of the IMPALA CNN introduced in Espeholt et al. (2018).
     """
-    def __init__(self, in_depth, actions, linear_layer, spectral_norm=False, resolution=224, global_pool_type='max'):
+    def __init__(self, depth, actions, linear_layer, spectral_norm=False, resolution=224, global_pool_type='max'):
         super().__init__()
 
-        self.convnext_backbone = timm.create_model('convnext_atto', pretrained=False, in_chans=in_depth)
+        self.convnext_backbone = timm.create_model('convnext_atto', pretrained=False, in_chans=depth)
         self.convnext_backbone.head.global_pool = nn.Identity()
         self.convnext_backbone.head.norm = nn.Identity()
         self.convnext_backbone.head.flatten = nn.Identity()
@@ -414,7 +414,7 @@ class ImpalaNeXtCNNLarge(nn.Module):
     """
     Implementation of the large variant of the IMPALA CNN introduced in Espeholt et al. (2018).
     """
-    def __init__(self, in_depth, actions, linear_layer, model_size=1, spectral_norm=False, stem='orig', layer_norm=False, 
+    def __init__(self, depth, actions, linear_layer, model_size=1, spectral_norm=False, stem='orig', layer_norm=False, 
                     convnext_downsampling=False, activation_pos='after', blur_pool=False):
         super().__init__()
 
@@ -424,9 +424,9 @@ class ImpalaNeXtCNNLarge(nn.Module):
         norm_func_last = torch.nn.utils.spectral_norm if (spectral_norm == 'last' or spectral_norm == 'all') else identity
 
         if stem == 'orig':
-            self.stem = ImpalaNeXtDownsample(in_depth, 16 * model_size, 84, 84, convnext_like=False, blur_pool=blur_pool)
+            self.stem = ImpalaNeXtDownsample(depth, 16 * model_size, 84, 84, convnext_like=False, blur_pool=blur_pool)
         elif stem == 'patchify':
-            self.stem = ImpalaNeXtPatchifyStem(in_depth, 16 * model_size, 84, 84, 2, layer_norm=layer_norm)
+            self.stem = ImpalaNeXtPatchifyStem(depth, 16 * model_size, 84, 84, 2, layer_norm=layer_norm)
         else:
             raise ValueError(f'Unknown stem type: {stem}')
 
@@ -435,7 +435,7 @@ class ImpalaNeXtCNNLarge(nn.Module):
             ImpalaNeXtDownsample(16 * model_size, 32*model_size, 42, 42, convnext_like=convnext_downsampling, layer_norm=layer_norm, blur_pool=blur_pool),
             ImpalaNeXtCNNBlock(32*model_size, 21, 21, norm_func=norm_func, layer_norm=layer_norm, activation_pos=activation_pos),
             ImpalaNeXtDownsample(32 * model_size, 32*model_size, 21, 21, convnext_like=convnext_downsampling, layer_norm=layer_norm, blur_pool=blur_pool),
-            ImpalaNeXtCNNBlock(32 * model_size, 11, 11, norm_func=norm_func_last, layer_norm=layer_norm, activation_pos=activation_pos),
+            ImpalaNeXtCNNBlock(32 * model_size, 10, 10, norm_func=norm_func_last, layer_norm=layer_norm, activation_pos=activation_pos),
             nn.GELU()
         )
 
@@ -458,10 +458,10 @@ class ImpalaNeXtCNNLarge(nn.Module):
 
 
 class ConvNeXtImpala(nn.Module):
-    def __init__(self, in_depth, actions, linear_layer, width):
+    def __init__(self, depth, actions, linear_layer, width):
         super().__init__()
         self.model = timm.models.ConvNeXt(
-                in_chans=in_depth,
+                in_chans=depth,
                 global_pool='avg',
                 output_stride= 32,
                 depths=(3, 3, 3, 0),
