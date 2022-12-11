@@ -1,0 +1,211 @@
+wandb: Currently logged in as: hadars (autoconvnext). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_020952-kuzyzn7i
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run apricot-valley-1
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/kuzyzn7i
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇█▇▅▃▄▄▄▃▂▂▂▂▁▂▂▂▂▁▁▁▁▁▂▂▃▅▂▂▂
+wandb:  mae █▄▃▃▂▂▂▂▂▂▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.35766
+wandb:  mae 3.78527
+wandb: 
+wandb: Synced apricot-valley-1: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/kuzyzn7i
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_020952-kuzyzn7i/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_041319-26h2ezos
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run crisp-gorge-3
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/26h2ezos
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▇▅▄▄▄▄▃▂▃▂▄▄▂▂▃▃▃▁▃▂▃▁▁▁▁▁▂▃▂
+wandb:  mae █▄▃▃▃▂▂▂▂▂▂▂▂▁▂▁▂▂▂▂▂▃▂▃▂▂▂▂▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.28023
+wandb:  mae 3.75867
+wandb: 
+wandb: Synced crisp-gorge-3: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/26h2ezos
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_041319-26h2ezos/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_061736-mye3b2ps
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run glorious-grass-5
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/mye3b2ps
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▆▆▆█▅▇▅▃▃▃▂▂▂▂▂▂▂▁▁▁▁▁▁▂▂▁▁▁▁▂
+wandb:  mae █▇█▇▅▄▂▂▂▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.32051
+wandb:  mae 3.84085
+wandb: 
+wandb: Synced glorious-grass-5: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/mye3b2ps
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_061736-mye3b2ps/logs
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_082140-qhokt36f
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run quiet-valley-7
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/qhokt36f
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▅▄▃▃▃▂▂▂▂▂▂▁▁▁▁▂▂▁▁▂▂▂▁▁▁▁▂▂▂
+wandb:  mae █▄▂▂▂▂▂▂▂▁▂▂▂▂▂▃▂▂▂▂▂▁▁▁▁▁▁▁▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.34986
+wandb:  mae 3.99588
+wandb: 
+wandb: Synced quiet-valley-7: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/qhokt36f
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_082140-qhokt36f/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_102551-8cfgexb1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run exalted-butterfly-9
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/8cfgexb1
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▆█▄▃▃▃▂▂▂▂▂▂▂▂▁▁▂▂▂▂▂▂▂▂▂▃▂▄▂▂
+wandb:  mae █▄▃▃▃▃▂▂▂▂▂▂▂▁▁▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.30931
+wandb:  mae 3.71112
+wandb: 
+wandb: Synced exalted-butterfly-9: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/8cfgexb1
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_102551-8cfgexb1/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_123005-1s6i18t1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sweet-tree-11
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/1s6i18t1
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▅█▅▃▃▃▃▂▂▁▁▁▁▂▂▂▁▂▁▁▂▃▁▂▂▂▂▂▂▁
+wandb:  mae █▅▄▃▃▃▂▂▂▂▂▂▂▃▃▂▃▄▃▂▃▂▂▂▂▂▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.2894
+wandb:  mae 3.8374
+wandb: 
+wandb: Synced sweet-tree-11: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/1s6i18t1
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_123005-1s6i18t1/logs
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_143414-hry0cqq8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dazzling-flower-13
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/hry0cqq8
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇█▄▃▃▃▃▂▂▂▂▂▃▂▂▂▂▁▁▁▂▂▂▁▂▁▁▁▂▂
+wandb:  mae █▄▃▃▃▂▂▂▂▂▂▂▂▂▃▂▃▂▂▂▂▂▂▂▂▂▂▂▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.35056
+wandb:  mae 3.71546
+wandb: 
+wandb: Synced dazzling-flower-13: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/hry0cqq8
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_143414-hry0cqq8/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_163825-52iu9157
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run unique-violet-15
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/52iu9157
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ██▅▄▃▂▂▂▂▂▂▁▁▁▁▁▁▂▂▂▂▁▁▁▅▃▂▂▂▁
+wandb:  mae █▃▂▂▂▂▁▁▁▁▂▂▂▂▂▁▁▁▁▁▁▁▁▁▂▃▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.31222
+wandb:  mae 4.22507
+wandb: 
+wandb: Synced unique-violet-15: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/52iu9157
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_163825-52iu9157/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_184246-32ayww7y
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run soft-sky-17
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/32ayww7y
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▄▃▃▃▂▂▂▃▃▄▄▂▃▂▂▂▃▃▂▂▁▁▁▂▁▁▁▁
+wandb:  mae █▄▃▃▃▃▃▂▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▂▂▂▁▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.21333
+wandb:  mae 3.84213
+wandb: 
+wandb: Synced soft-sky-17: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/32ayww7y
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_184246-32ayww7y/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221202_204708-2vaiwsjc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dashing-mountain-19
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/2vaiwsjc
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▆▆▆█▆▅▄▃▃▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▂▁▁
+wandb:  mae ████▆▄▃▂▂▂▁▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▂▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.26351
+wandb:  mae 3.90735
+wandb: 
+wandb: Synced dashing-mountain-19: https://wandb.ai/autoconvnext/benchmark_final_impalanextv2_large_2_MDQN_modern_Qbert_model_50000000_0_impalanextv2_large_2/runs/2vaiwsjc
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221202_204708-2vaiwsjc/logs

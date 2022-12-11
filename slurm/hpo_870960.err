@@ -1,0 +1,394 @@
+wandb: Currently logged in as: hadars (autoconvnext). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221203_235151-2u2csmxl
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run silvery-surf-1
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/2u2csmxl
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ██▇▇▇▇▇▆▆▆▆▄▄▃▃▃▃▂▂▂▂▁▂▂▁▁▁▁▅▂
+wandb:  mae ▇█▇▇█▇▇▅▆▆▆▅▅▅▅▄▄▄▄▄▄▁▃▃▃▃▃▃▄▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.47867
+wandb:  mae 2.77541
+wandb: 
+wandb: Synced silvery-surf-1: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/2u2csmxl
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221203_235151-2u2csmxl/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_010026-n61r6la7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lilac-firebrand-2
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/n61r6la7
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▇▅▆▅▅▄▃▃▂▃▂▂▁▂▁▁▃▁▁▁▂▂▁▁▁▁▁▁▁
+wandb:  mae ▇▅▄█▄▇▇▆▆▅▅▅▅▄▅▃▅▁▄▄▄▄▃▄▄▃▃▅▄▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.07334
+wandb:  mae 2.93469
+wandb: 
+wandb: Synced lilac-firebrand-2: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/n61r6la7
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_010026-n61r6la7/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_020941-1hnxckzn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fancy-sky-3
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/1hnxckzn
+wandb: WARNING A graphql request initiated by the public wandb API timed out (timeout=9 sec). Create a new API with an integer timeout larger than 9, e.g., `api = wandb.Api(timeout=19)` to increase the graphql timeout.
+wandb: WARNING A graphql request initiated by the public wandb API timed out (timeout=9 sec). Create a new API with an integer timeout larger than 9, e.g., `api = wandb.Api(timeout=19)` to increase the graphql timeout.
+wandb: WARNING A graphql request initiated by the public wandb API timed out (timeout=9 sec). Create a new API with an integer timeout larger than 9, e.g., `api = wandb.Api(timeout=19)` to increase the graphql timeout.
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▇▇▆▆▆▄▄▃▃▃▂▂▁▂▁▁▁▁▁▃▁▁▁▁▁▁▁▁
+wandb:  mae ▆▄▇██▇▇▇▆▆▆▄▅▄▄▄▄▄▄▄▄▄▄▄▄▃▃▁▄▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.24539
+wandb:  mae 2.92764
+wandb: 
+wandb: Synced fancy-sky-3: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/1hnxckzn
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_020941-1hnxckzn/logs
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_032531-32srp10j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run icy-water-4
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/32srp10j
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x2aab3ae44d30>
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1493, in _shutdown_workers
+    if w.is_alive():
+  File "/data1/s3092593/rlenv/lib/python3.8/multiprocessing/process.py", line 160, in is_alive
+    assert self._parent_pid == os.getpid(), 'can only test a child process'
+AssertionError: can only test a child process
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ██▇▆▅▅▅▃▃▅▃▂▂▂▂▂▂▂▄▁▁▁▁▁▁▁▁▁▁▁
+wandb:  mae ▅█▇▅▅▅▆▄▄▅▃▃▃▃▂▃▂▁▂▂▂▂▂▁▃▃▃▄▃▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.09572
+wandb:  mae 2.90176
+wandb: 
+wandb: Synced icy-water-4: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/32srp10j
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_032531-32srp10j/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_043347-23x7c1je
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pretty-moon-5
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/23x7c1je
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇▇█▇▆▅▅▅▃▃▃▂▂▂▂▂▁▂▂▂▄▃▂▁▁▁▁▁▁▁
+wandb:  mae ▆█▇▆▅▆▇▆▅▅▅▃▃▃▃▃▂▂▁▁▁▃▂▂▂▃▂▃▁▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.26872
+wandb:  mae 2.98252
+wandb: 
+wandb: Synced pretty-moon-5: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/23x7c1je
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_043347-23x7c1je/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_054245-mv1pg3g9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run usual-donkey-6
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/mv1pg3g9
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ██▇▅▆▄▃▂▃▁▂▂▁▁▄▃▃▂▁▂▁▁▁▁▁▁▁▁▁▁
+wandb:  mae ▆█▇▆▇▆▅▆▅▃▅▄▃▁▃▆▆▂▃▄▄▄▃▄▄▅▅▄▄▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.1059
+wandb:  mae 2.95641
+wandb: 
+wandb: Synced usual-donkey-6: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/mv1pg3g9
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_054245-mv1pg3g9/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_065132-2je3f4pv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run elated-sea-7
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/2je3f4pv
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇████▇▆▄▃▃▂▂▂▂▁▂▂▃▁▂▂▁▁▁▁▁▁▁▁▁
+wandb:  mae ▄█▆▆▆▅▆▇▅▄▄▄▃▂▂▂▂▃▂▂▃▂▂▁▂▁▂▂▂▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.1044
+wandb:  mae 2.73993
+wandb: 
+wandb: Synced elated-sea-7: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/2je3f4pv
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_065132-2je3f4pv/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_075950-10uc3wgw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clear-jazz-8
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/10uc3wgw
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇██▇▅▅▄▃▃▃▂▄▂▁▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:  mae ▄██▆▅▆▆▅▅▅▄▁▄▄▃▃▃▃▃▃▃▃▃▃▃▂▂▃▄▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.11667
+wandb:  mae 3.0329
+wandb: 
+wandb: Synced clear-jazz-8: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/10uc3wgw
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_075950-10uc3wgw/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_090747-1sgfpier
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run laced-elevator-9
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/1sgfpier
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ███▇▅▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▃▁▁▁▁
+wandb:  mae ▆██▇▇▆▆▆▆▆▆▅▅▄▄▅▄▄▁▄▄▄▄▄▄▄▄▃▄▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.05085
+wandb:  mae 2.83836
+wandb: 
+wandb: Synced laced-elevator-9: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/1sgfpier
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_090747-1sgfpier/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221204_101600-1mh9be70
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gentle-brook-10
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/1mh9be70
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ███▇█▆█▇▆▆▅▄▄▃▃▂▂▄▁▂▁▁▁▂▁▁▁▁▂▂
+wandb:  mae ▅▆█▇▅▃█▇▇▆▇▆▆▆▅▄▃▅▂▄▃▃▁▃▃▂▁▁▁▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.54646
+wandb:  mae 2.69604
+wandb: 
+wandb: Synced gentle-brook-10: https://wandb.ai/autoconvnext/benchmark_final_dueling_MDQN_modern_NameThisGame_model_50000000_0_dueling/runs/1mh9be70
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221204_101600-1mh9be70/logs

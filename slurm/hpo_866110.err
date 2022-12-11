@@ -1,0 +1,224 @@
+wandb: Currently logged in as: hadars (autoconvnext). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_020237-1lciihlo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run floral-sunset-1
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/1lciihlo
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▆▆▆▅▅▅▄▄▄▄▄▄▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁
+wandb:  mae ██▆▅▅▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▂▂▁▂▁▁▁▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.19217
+wandb:  mae 0.8921
+wandb: 
+wandb: Synced floral-sunset-1: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/1lciihlo
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_020237-1lciihlo/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_031335-2g4a1097
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dark-tree-2
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/2g4a1097
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇█▆▆▆▅▅▅▅▅▅▄▅▄▄▄▃▃▃▃▂▂▂▂▁▁▁▁▁▁
+wandb:  mae █▆▅▄▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▂▂▁▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.18634
+wandb:  mae 0.91382
+wandb: 
+wandb: Synced dark-tree-2: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/2g4a1097
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_031335-2g4a1097/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_042507-162c123z
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sleek-dream-3
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/162c123z
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▇▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▁▁▁
+wandb:  mae █▆▅▄▃▃▂▂▂▂▁▁▂▁▁▁▁▁▁▁▁▁▂▁▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.22381
+wandb:  mae 0.91462
+wandb: 
+wandb: Synced sleek-dream-3: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/162c123z
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_042507-162c123z/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_053634-105phgdp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run balmy-disco-4
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/105phgdp
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▇▆▆▆▅▅▄▄▄▃▃▃▃▃▃▃▃▂▃▂▂▂▁▁▁▁▁▁▂
+wandb:  mae █▇▆▅▄▃▂▂▂▁▂▂▁▂▂▁▁▁▁▁▂▁▃▂▂▄▂▂▂▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.28426
+wandb:  mae 0.9266
+wandb: 
+wandb: Synced balmy-disco-4: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/105phgdp
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_053634-105phgdp/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_064716-36qoze8l
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run eager-resonance-5
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/36qoze8l
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▇█▇▆▆▆▅▅▅▅▄▄▄▄▃▃▃▃▃▂▂▂▂▂▁▁▂▁▁▁
+wandb:  mae █▆▇▄▄▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.19923
+wandb:  mae 0.9028
+wandb: 
+wandb: Synced eager-resonance-5: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/36qoze8l
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_064716-36qoze8l/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_075825-3nie8dky
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run spring-hill-6
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/3nie8dky
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▆▅▅▆▅▅▅▅▄▄▃▃▃▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁
+wandb:  mae █▆▆▄▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.21966
+wandb:  mae 0.90887
+wandb: 
+wandb: Synced spring-hill-6: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/3nie8dky
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_075825-3nie8dky/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_090929-3j2i7s5w
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run earnest-frog-7
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/3j2i7s5w
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▆▅▆▅▆▅▄▅▄▄▄▃▃▃▃▃▂▂▂▂▂▂▂▁▁▁▁▂
+wandb:  mae ██▇▅▄▃▃▂▂▂▂▂▁▁▁▁▁▁▂▂▁▁▂▂▃▃▂▃▂▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.25955
+wandb:  mae 0.94695
+wandb: 
+wandb: Synced earnest-frog-7: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/3j2i7s5w
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_090929-3j2i7s5w/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221201_102132-2zeb5c6v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run northern-breeze-8
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/2zeb5c6v
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▇▇▇▇▆▆▆▅▅▅▄▄▄▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁
+wandb:  mae █▇▆▅▄▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.17779
+wandb:  mae 0.88368
+wandb: 
+wandb: Synced northern-breeze-8: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_15250000_0_impala_large_2/runs/2zeb5c6v
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221201_102132-2zeb5c6v/logs
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1075, in init
+    wi.setup(kwargs)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 302, in setup
+    self._log_setup(settings)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 446, in _log_setup
+    filesystem._safe_makedirs(os.path.dirname(settings.log_user))
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/lib/filesystem.py", line 10, in _safe_makedirs
+    os.makedirs(dir_name)
+  File "/data1/s3092593/rlenv/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data1/s3092593/rlenv/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 122] Disk quota exceeded: '/home/s3092593/benchmarking_rl/wandb/run-20221201_113313-38yeg332'
+error
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1075, in init
+    wi.setup(kwargs)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 302, in setup
+    self._log_setup(settings)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 446, in _log_setup
+    filesystem._safe_makedirs(os.path.dirname(settings.log_user))
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/lib/filesystem.py", line 10, in _safe_makedirs
+    os.makedirs(dir_name)
+  File "/data1/s3092593/rlenv/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data1/s3092593/rlenv/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 122] Disk quota exceeded: '/home/s3092593/benchmarking_rl/wandb/run-20221201_113313-38yeg332'
+wandb: ERROR Abnormal program exit
+Traceback (most recent call last):
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1075, in init
+    wi.setup(kwargs)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 302, in setup
+    self._log_setup(settings)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 446, in _log_setup
+    filesystem._safe_makedirs(os.path.dirname(settings.log_user))
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/lib/filesystem.py", line 10, in _safe_makedirs
+    os.makedirs(dir_name)
+  File "/data1/s3092593/rlenv/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data1/s3092593/rlenv/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 122] Disk quota exceeded: '/home/s3092593/benchmarking_rl/wandb/run-20221201_113313-38yeg332'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "train.py", line 106, in <module>
+    main(args, train_dataset, test_dataset)
+  File "train.py", line 40, in main
+    wandb.init(project=f'benchmark_{proj_name}_{mname}', config=args)
+  File "/data1/s3092593/rlenv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1116, in init
+    raise Exception("problem") from error_seen
+Exception: problem

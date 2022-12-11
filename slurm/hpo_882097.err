@@ -1,0 +1,211 @@
+wandb: Currently logged in as: hadars (autoconvnext). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_172447-2fawzpzb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fanciful-frog-11
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/2fawzpzb
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▅█▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▆▆▆▅▅▅▄▄▃▃▂▁▁
+wandb:  mae █▅▅▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▂▂▂▃▃▃▃▄▄▄▄▅
+wandb: 
+wandb: Run summary:
+wandb: loss 0.58699
+wandb:  mae 1.06129
+wandb: 
+wandb: Synced fanciful-frog-11: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/2fawzpzb
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_172447-2fawzpzb/logs
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_183240-c7bg98r9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lucky-firebrand-12
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/c7bg98r9
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▂▇▇█▇████████▇▇▇▆▆▆▆▆▆▅▅▄▄▃▂▂▁
+wandb:  mae █▄▄▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▃▃▃▃▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.58881
+wandb:  mae 1.04226
+wandb: 
+wandb: Synced lucky-firebrand-12: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/c7bg98r9
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_183240-c7bg98r9/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_194111-ubfiuxbr
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run drawn-flower-13
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/ubfiuxbr
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▃▆▇█▇▇▇▇█████▇▇▇▆▆▅▄▄▄▄▃▃▂▂▂▁▁
+wandb:  mae █▅▄▃▂▂▂▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▃▃▃▃▃▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.58738
+wandb:  mae 1.02419
+wandb: 
+wandb: Synced drawn-flower-13: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/ubfiuxbr
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_194111-ubfiuxbr/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_204959-39js0nu9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run robust-darkness-14
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/39js0nu9
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▃███▇▇▇▇████▇▇▇▇▆▆▆▅▅▅▄▃▄▃▃▂▁▁
+wandb:  mae █▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.54978
+wandb:  mae 1.07742
+wandb: 
+wandb: Synced robust-darkness-14: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/39js0nu9
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_204959-39js0nu9/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_215809-18649atp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run laced-haze-15
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/18649atp
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▄▇▇▇█▇▇▇▇▇▇▇▇▇▇▇▆▅▅▄▄▄▄▃▃▂▂▁▁▁
+wandb:  mae █▅▄▃▂▂▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.60845
+wandb:  mae 1.03235
+wandb: 
+wandb: Synced laced-haze-15: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/18649atp
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_215809-18649atp/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_230713-2w5mxwp7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bumbling-wood-16
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/2w5mxwp7
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▂▆▇▇▇▇▇█▇████▇▇▇▇▇▇▇▆▆▅▄▄▃▃▂▂▁
+wandb:  mae █▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▃▃▃▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.52284
+wandb:  mae 1.08528
+wandb: 
+wandb: Synced bumbling-wood-16: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/2w5mxwp7
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_230713-2w5mxwp7/logs
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_001508-1l7wx6qk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dauntless-disco-17
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/1l7wx6qk
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▆██▇█▇▇▇▇▇▇▇▇▇▇▆▅▅▄▃▃▃▃▂▃▂▂▁▂▁
+wandb:  mae █▆▅▄▃▂▂▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▅▅
+wandb: 
+wandb: Run summary:
+wandb: loss 0.70358
+wandb:  mae 1.05828
+wandb: 
+wandb: Synced dauntless-disco-17: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/1l7wx6qk
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_001508-1l7wx6qk/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_012331-51ukfi8l
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run peach-wood-18
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/51ukfi8l
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁█▇█▇▇▇▇▇▇▇▇▇▇▇▆▆▆▆▅▅▅▄▃▃▂▂▁▁▁
+wandb:  mae █▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.56337
+wandb:  mae 1.08247
+wandb: 
+wandb: Synced peach-wood-18: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/51ukfi8l
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_012331-51ukfi8l/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_023206-1m86ttxe
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run glowing-smoke-19
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/1m86ttxe
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▂█▆▅▇▇▇▇███▇▇▇▆▆▅▅▅▄▄▄▄▄▃▃▂▂▁▁
+wandb:  mae █▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▃▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.6369
+wandb:  mae 1.05357
+wandb: 
+wandb: Synced glowing-smoke-19: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/1m86ttxe
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_023206-1m86ttxe/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_034044-3ew4gx2z
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run glorious-forest-20
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/3ew4gx2z
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▆▇▇█▇▇▇▇▇█▇▇▆▆▆▆▅▅▄▄▄▄▄▄▃▃▃▂▂▁
+wandb:  mae █▆▅▄▃▂▂▁▁▁▁▁▁▁▁▂▂▂▂▃▃▃▃▃▃▃▄▄▄▄
+wandb: 
+wandb: Run summary:
+wandb: loss 0.49339
+wandb:  mae 1.05293
+wandb: 
+wandb: Synced glorious-forest-20: https://wandb.ai/autoconvnext/benchmark_final_dueling_DQN_modern_Phoenix_model_50000000_0_dueling/runs/3ew4gx2z
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_034044-3ew4gx2z/logs

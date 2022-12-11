@@ -55,12 +55,13 @@ def main(args, train_dataset, test_dataset):
 
     print('Training Starts!')
     for epoch in range(n_epochs):
+        # total_loss = torch.zeros(1, device='cuda:0')
         for data, target, actions in train_loader:
 
             with amp_autocast():
                 y = torch.gather(model(data), dim=1, index=actions)
                 loss = criterion(y, target)
-
+                # total_loss += loss
             optimizer.zero_grad()
             scaler(loss, optimizer)
         

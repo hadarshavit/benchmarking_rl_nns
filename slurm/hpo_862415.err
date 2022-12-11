@@ -1,0 +1,211 @@
+wandb: Currently logged in as: hadars (autoconvnext). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221129_212912-1pwnxpzz
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run atomic-puddle-1
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1pwnxpzz
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▄▃▃▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁
+wandb:  mae █▅▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.06722
+wandb:  mae 0.36702
+wandb: 
+wandb: Synced atomic-puddle-1: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1pwnxpzz
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221129_212912-1pwnxpzz/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221129_224031-2w85nzzn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rosy-sun-2
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/2w85nzzn
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▇▄▃▃▃▃▃▃▃▃▂▃▃▂▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁
+wandb:  mae █▆▅▄▃▃▃▂▂▂▂▂▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.06634
+wandb:  mae 0.3652
+wandb: 
+wandb: Synced rosy-sun-2: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/2w85nzzn
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221129_224031-2w85nzzn/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221129_235216-3pd0xfj4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run classic-sound-3
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/3pd0xfj4
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▅▄▃▃▄▄▄▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:  mae █▅▄▃▃▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.0735
+wandb:  mae 0.36468
+wandb: 
+wandb: Synced classic-sound-3: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/3pd0xfj4
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221129_235216-3pd0xfj4/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_010346-1dnwagkf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run devout-dew-4
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1dnwagkf
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▄▄▃▃▃▃▄▄▄▄▄▃▃▃▃▂▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:  mae █▅▄▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▂▂▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.06537
+wandb:  mae 0.36374
+wandb: 
+wandb: Synced devout-dew-4: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1dnwagkf
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_010346-1dnwagkf/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_021516-gyahtjdj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run light-star-5
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/gyahtjdj
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ██▅▃▃▃▃▃▃▃▃▃▃▃▂▂▁▂▂▂▂▁▁▂▁▁▁▁▁▁
+wandb:  mae █▇▇▅▄▄▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▁▁▂▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.07188
+wandb:  mae 0.3629
+wandb: 
+wandb: Synced light-star-5: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/gyahtjdj
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_021516-gyahtjdj/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_032643-1w9x5b9i
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fresh-dragon-6
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1w9x5b9i
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▇▄▄▃▃▃▃▃▃▃▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb:  mae █▄▄▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.07195
+wandb:  mae 0.36277
+wandb: 
+wandb: Synced fresh-dragon-6: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1w9x5b9i
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_032643-1w9x5b9i/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_043839-2pv9uqb0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fanciful-resonance-7
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/2pv9uqb0
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▅▆▃▃▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▁▂▂▂▁▂▂▁▂
+wandb:  mae █▅▄▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.07865
+wandb:  mae 0.36397
+wandb: 
+wandb: Synced fanciful-resonance-7: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/2pv9uqb0
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_043839-2pv9uqb0/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_055009-1o1unxwn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run polished-dragon-8
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1o1unxwn
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▅▄▃▄▃▄▃▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▁▁▁▁▁▁
+wandb:  mae █▄▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.06047
+wandb:  mae 0.36698
+wandb: 
+wandb: Synced polished-dragon-8: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/1o1unxwn
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_055009-1o1unxwn/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_070126-vc5ff0d7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lilac-cherry-9
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/vc5ff0d7
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▆▄▄▃▃▃▄▃▃▃▃▃▂▃▂▃▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:  mae █▆▄▃▃▃▂▂▂▂▂▂▂▃▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.07153
+wandb:  mae 0.36651
+wandb: 
+wandb: Synced lilac-cherry-9: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/vc5ff0d7
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_070126-vc5ff0d7/logs
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221130_081314-q7qav63j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sparkling-terrain-10
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/q7qav63j
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss █▅▃▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁
+wandb:  mae █▄▃▂▂▂▂▂▂▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: loss 0.06998
+wandb:  mae 0.36217
+wandb: 
+wandb: Synced sparkling-terrain-10: https://wandb.ai/autoconvnext/benchmark_final_nature_DQN_modern_BattleZone_model_50000000_0_nature/runs/q7qav63j
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221130_081314-q7qav63j/logs

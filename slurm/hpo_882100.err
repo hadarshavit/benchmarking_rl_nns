@@ -1,0 +1,211 @@
+wandb: Currently logged in as: hadars (autoconvnext). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_212449-30rikc2s
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vital-oath-3
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/30rikc2s
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▆▇▇▆▇▇▇█▇█▇▇████▇█▇▇▆▆▇▇▆▅▄▇▅
+wandb:  mae █▄▃▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.8464
+wandb:  mae 0.9318
+wandb: 
+wandb: Synced vital-oath-3: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/30rikc2s
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_212449-30rikc2s/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_223727-1a2jf5df
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-butterfly-4
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/1a2jf5df
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▂▅▆▆▆▆▇▇▆▆▇▇██▇▇▇▆▆▄▃▂▄▄▃▃▃▃▂▁
+wandb:  mae █▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▁▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.65239
+wandb:  mae 0.94913
+wandb: 
+wandb: Synced zany-butterfly-4: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/1a2jf5df
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_223727-1a2jf5df/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221209_235045-16p1yalh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dry-oath-5
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/16p1yalh
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▅▆▇▇▆▄▇▇▇▇█▇███▇▆▇▆▇▄▃▄▂▁▁▂▂▂▁
+wandb:  mae █▄▃▃▂▂▂▂▂▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.75471
+wandb:  mae 0.94441
+wandb: 
+wandb: Synced dry-oath-5: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/16p1yalh
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221209_235045-16p1yalh/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_010401-3tx8wsvm
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run crisp-shadow-6
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/3tx8wsvm
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▇▇▇▆▇▇█▇████▇█▇▆▆▅▅▆▅▃▃▄▄▄▄▃▂
+wandb:  mae █▄▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.69567
+wandb:  mae 0.9766
+wandb: 
+wandb: Synced crisp-shadow-6: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/3tx8wsvm
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_010401-3tx8wsvm/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_021652-35dd0j1g
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run comfy-rain-7
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/35dd0j1g
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▆▆▆▇▆▇▇▇▇█▇▇▇▆▇▆▆▆▆▅▅▄▃▄▄▄▄▄▄
+wandb:  mae █▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.84231
+wandb:  mae 0.98594
+wandb: 
+wandb: Synced comfy-rain-7: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/35dd0j1g
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_021652-35dd0j1g/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_033043-u433mdyl
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run driven-frog-8
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/u433mdyl
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▅▇▇▇▆▆▇▇████▇▇▇▇▇▇▆▆▇▆▆▅▅▆▄▄▄
+wandb:  mae █▄▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▃
+wandb: 
+wandb: Run summary:
+wandb: loss 0.81013
+wandb:  mae 1.01136
+wandb: 
+wandb: Synced driven-frog-8: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/u433mdyl
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_033043-u433mdyl/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_044333-2lm4i5qb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bumbling-wind-9
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/2lm4i5qb
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▆▆▆▆▆▆▆▇▇▇▇█▇█▇▇▇▇█▇▆▄▅▅▆▄▅▄▄
+wandb:  mae █▃▃▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.80731
+wandb:  mae 0.95448
+wandb: 
+wandb: Synced bumbling-wind-9: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/2lm4i5qb
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_044333-2lm4i5qb/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_055719-3tg69s1y
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run expert-water-10
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/3tg69s1y
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▅▇▆▇▇███████▇▇█▆▆▆▆▆▅▄▃▃▄▃▃▄▄
+wandb:  mae █▄▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.79743
+wandb:  mae 0.95953
+wandb: 
+wandb: Synced expert-water-10: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/3tg69s1y
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_055719-3tg69s1y/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_071022-nmig45fo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stellar-cosmos-11
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/nmig45fo
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▆▇▆▆▆▆▇████▇▇▇▆▆▇▇▇█▆▇▆▇▆▂▅▄▅
+wandb:  mae █▄▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.88169
+wandb:  mae 0.96696
+wandb: 
+wandb: Synced stellar-cosmos-11: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/nmig45fo
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_071022-nmig45fo/logs
+wandb: wandb version 0.13.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /home/s3092593/benchmarking_rl/wandb/run-20221210_082331-1d2xc7sv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vague-dream-12
+wandb: ⭐️ View project at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2
+wandb: 🚀 View run at https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/1d2xc7sv
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: loss ▁▅▇▇▇▇███▆▇█▇▇▇▇▇▆▅▅▄▄▄▄▃▄▂▃▂▂
+wandb:  mae █▄▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: loss 0.75533
+wandb:  mae 0.9578
+wandb: 
+wandb: Synced vague-dream-12: https://wandb.ai/autoconvnext/benchmark_final_impala_large_2_DQN_modern_Phoenix_model_50000000_0_impala_large_2/runs/1d2xc7sv
+wandb: Synced 6 W&B file(s), 0 media file(s), 1 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221210_082331-1d2xc7sv/logs

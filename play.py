@@ -73,7 +73,7 @@ def _epsilon_greedy(obs, model, eps=0.001):
 def _softmax(obs, model, tau=0.1):
     qs = model(obs)
     qs /= tau
-    qs = torch.softmax(qs)
+    qs = torch.softmax(qs, 1)
 
     return torch.distributions.Categorical(probs=qs).sample()
 
@@ -116,6 +116,7 @@ def main(opt):
     os.makedirs(save_path)
     files = []
     # configure policy
+    # policy = partial(_softmax, model=model, tau=opt.tau)
     policy = partial(_epsilon_greedy, model=model, eps=opt.eps)
 
     episodes_data = []
@@ -171,5 +172,5 @@ if __name__ == "__main__":
         "-d", "--save-path", default='/data1/s3092593/qbert_replays', type=str, help="record png screens and sound",
     )
     parser.add_argument('--eps', type=float, default=0.2)
-
+    # parser.add_argument('--tau', type=float, default=1.0)
     main(parser.parse_args())
