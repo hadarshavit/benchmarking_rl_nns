@@ -24,12 +24,12 @@ def parse_args():
     parser.add_argument('--wandb', type=bool, default=True)
     parser.add_argument('--wandb-name', type=str, default='')
     parser.add_argument('--use-validation', type=bool, default=False)
-
+    parser.add_argument('--n_actions', type=int)
 
     return parser.parse_args()
 
 
-def main(args, train_dataset, test_dataset):
+def main(args, train_dataset, validation_dataset, test_dataset):
     n_epochs = 30
     timm.utils.random_seed(args.seed)
     device = torch.device('cuda:0')
@@ -37,19 +37,21 @@ def main(args, train_dataset, test_dataset):
 
     if args.wandb:
         proj_name = args.wandb_name.replace(':', '_')
-        wandb.init(project=f'benchmark_{proj_name}_{mname}', config=args)
+        wandb.init(project=f'benchmarkv2_{proj_name}_{mname}', config=args)
 
     amp_autocast = partial(torch.autocast, device_type=device.type, dtype=torch.float16)
 
     print('Creating Datasets')
-    model = get_model(args.model, spectral_norm=False, resolution=(84, 84))(depth=4, actions=18, linear_layer=nn.Linear).to(device)
+    model = get_model(args.model, spectral_norm=False, resolution=(84, 84))(depth=4, actions=args.n_actions, linear_layer=nn.Linear).to(device)
 
     criterion = torch.nn.SmoothL1Loss()
     mae = torch.nn.L1Loss(reduction='sum')
-    maes = torch.zeros(n_epochs, device='cuda:0')
+    validation_maes = torch.zeros(n_epochs, device='cuda:0')
+    test_maes = torch.zeros(n_epochs, device='cuda:0')
     optimizer = torch.optim.RAdam(model.parameters(), lr=args.lr)
     
     train_loader = PrefetchLoader(MultiEpochsDataLoader(train_dataset, batch_size=1024, num_workers=5, persistent_workers=True))
+    validation_loader = PrefetchLoader(MultiEpochsDataLoader(validation_dataset, batch_size=1024, num_workers=5, persistent_workers=True))
     test_loader = PrefetchLoader(MultiEpochsDataLoader(test_dataset, batch_size=1024, num_workers=5, persistent_workers=True))
     scaler = NativeScaler()
 
@@ -66,23 +68,29 @@ def main(args, train_dataset, test_dataset):
             scaler(loss, optimizer)
         
         with torch.no_grad():
+            for data, target, actions in validation_loader:
+                with amp_autocast():
+                    y = torch.gather(model(data), dim=1, index=actions)
+                    validation_maes[epoch] += mae(y, target)
+
             for data, target, actions in test_loader:
                 with amp_autocast():
                     y = torch.gather(model(data), dim=1, index=actions)
-                    maes[epoch] += mae(y, target)
+                    test_maes[epoch] += mae(y, target)
 
-                    if torch.isnan(maes[epoch]) or torch.isinf(maes[epoch]):
-                        print('NAN or INF mae detectedm stopping training')
-                        return 100
+                    # if torch.isnan(maes[epoch]) or torch.isinf(maes[epoch]):
+                    #     print('NAN or INF mae detectedm stopping training')
+                    #     return 100
 
-        maes[epoch] /= len(test_dataset)
+        validation_maes[epoch] /= len(validation_dataset)
+        test_maes[epoch] /= len(test_dataset)
         if args.wandb:
-            wandb.log({'loss': loss, 'mae': maes[epoch]})
-        print(f'Epoch {epoch}, mae {maes[epoch]}')
+            wandb.log({'loss': loss, 'validation_mae': validation_maes[epoch], 'test_mae': test_maes[epoch]})
+        print(f'Epoch {epoch}, validation mae {validation_maes[epoch]}, test mae {test_maes[epoch]}')
 
-    torch.save(maes, 'maes.pt')
+    # torch.save(maes, 'maes.pt')
     
-    print('AUC:', torch.trapezoid(maes))
+    # print('AUC:', torch.trapezoid(maes))
     if args.wandb:
         torch.save(model, f'/data1/s3092593/saved_benchmarks/benchmark_{args.wandb_name}_{mname}_{args.seed}.pt')
         artifact = wandb.Artifact('saved_model', type='model')
@@ -90,18 +98,18 @@ def main(args, train_dataset, test_dataset):
         wandb.log_artifact(artifact)
         wandb.finish()
 
-    return maes[-1].item()
+    # return maes[-1].item()
 
 
 if __name__ == '__main__':
     args = parse_args()
 
     train_dataset = PolicyDataset(os.path.join(args.dataset_path, 'train'), prepare=False)
-    if not args.use_validation:
-        test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'test'),  prepare=False)
-    else:
-        test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'validation'),  prepare=False)
+    # if not args.use_validation:
+    test_dataset = PolicyDataset(os.path.join(args.dataset_path, 'test'),  prepare=False)
+    # else:
+    validation_dataset = PolicyDataset(os.path.join(args.dataset_path, 'validation'),  prepare=False)
 
     for rep in range(args.reps):
-        main(args, train_dataset, test_dataset)
+        main(args, train_dataset, validation_dataset, test_dataset)
         args.seed += 1
